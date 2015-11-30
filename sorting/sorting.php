@@ -1,0 +1,1 @@
+<?for($a=split(' ',STR),$i=0,$c=count($a);$i++<$c;)for($j=1;$j<$c;$j++)$a[$j-1]<$a[$j]?:list($a[$j-1],$a[$j])=array($a[$j],$a[$j-1]);echo join($a,' ');
