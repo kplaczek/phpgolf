@@ -1,1 +1,1 @@
- <?for($b=63;$b++<89;print"\n")for($a=$b;$a++<$b+26;print chr($a>90?$a-26:$a)){} 
+ <?for($s=AAA;$s<BAZ;$s++)echo++$i%27?$s{2}:"\n";
