@@ -1,12 +1,1 @@
-<?
-$range = array_merge(range(0,9),range('a','z'));
-foreach(explode("\n", NUM) as $line){
-    list($num, $base) = split(',', $line);
-    $converted = '';
-    while($num >= $base){
-        $tmp = $num % $base;
-        $converted = $range[$tmp].$converted;
-        $num =intval($num/$base);
-    }
-    echo $range[$num].$converted."\n";
-}
+<?$r=array_merge(range(0,9),range('a','z'));foreach(explode("\n",NUM) as$l){$n=split(',',$l);$c='';while($n[0]>=$n[1]){$c=$r[$n[0]%$n[1]].$c;$n[0]=(int)$n[0]/$n[1];}echo$r[$n[0]].$c."\n";}
