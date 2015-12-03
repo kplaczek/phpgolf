@@ -14,6 +14,7 @@ This one is bad. But at least works so I can treat this as ungolfed version.
 A lot of room for improvement.
 ### Palindromes - 49 bytes
 This one is done. I can't figure out any better way than this.
+### ROT 13 - 58 bytes (wip)
 ### Sorting - 151 bytes (wip)
 Some quick implementation of butte sort algorithm.
 ### Triangular numbers - 31 bytes
