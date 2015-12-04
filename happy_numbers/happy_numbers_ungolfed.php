@@ -1,4 +1,4 @@
-<?
+<?php
 for(;$x++ < 1e3;) {
     $past = [];
     $n = $x;
@@ -15,6 +15,6 @@ for(;$x++ < 1e3;) {
         if (array_key_exists($total, $past))
             break;
         $n = $total;
-        $past[$total] = 0;
+        $past[$total]=0;
     }
 }
