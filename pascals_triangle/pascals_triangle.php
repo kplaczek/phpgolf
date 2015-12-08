@@ -1,0 +1,1 @@
+<?php for($i=1;$i<21;$i++){$d=array(1);for($j=0;$j<$i;$j++)if($j)$d[]=str_pad($p[$j-1]+$p[$j],5,' ',0);echo str_repeat(' ',(20-$i)*3).join(' ',$d),"\n";$p=$d;}
