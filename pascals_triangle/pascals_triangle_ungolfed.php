@@ -1,19 +1,11 @@
 <?php
-for ($n=20,$i=1;$i<=$n; $i++)
-{
-    $row = array();
-    $row[] = 1;
-    $t = str_repeat('   ',$n-$i);
-    for ($j=0; $j<$i; $j++)
-    {
-        if ($j)
-        {
-            $row[] = $prev[$j-1]+$prev[$j];
+for($i=1;$i<21;$i++){
+    $data = array(1);
+    for($j=0;$j<$i;$j++){
+        if($j){
+            $data[]=str_pad($prev[$j-1]+$prev[$j],5,' ',0);
         }
-        $t .= str_pad($row[$j],6);
     }
-    $o .=  trim($t,'+')."\n";
-    $row[] = 0;
-    $prev = $row;
+    echo  str_repeat(' ',(20-$i)*3).join(' ', $data),"\n";
+    $prev = $data;
 }
-echo $o;
